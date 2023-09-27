@@ -5,14 +5,22 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Create Next App</title>
+        <title>Portfolio-MKA</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
       <main>
+      <div style={{
+            backgroundImage: `url("/img/b1.jpg")`,
+            height: "100vh",
+            backgroundRepeat: "no-repeat",
+            backgroundSize: "cover",
+        }}>
+        <img src="/img/bg1" />
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Hi..! I'm Kunguma Akshatra M
         </h1>
+        <h3>A Computer Science Engineer </h3></div>
 
         <p className={styles.description}>
           Get started by editing <code>pages/index.js</code>
