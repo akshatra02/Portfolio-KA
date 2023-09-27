@@ -1,5 +1,6 @@
-import Head from 'next/head';
-import styles from '../styles/Home.module.css';
+import Head from "next/head";
+import styles from "../styles/Home.module.css";
+import Navigation from './Navigation';
 
 export default function Home() {
   return (
@@ -7,23 +8,32 @@ export default function Home() {
       <Head>
         <title>Portfolio-MKA</title>
         <link rel="icon" href="/favicon.ico" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
+          rel="stylesheet"
+        />
+        
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
+    
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet"></link>
+
+        {/* <link href="https://fonts.googleapis.com/css?family=Alegreya|Open+Sans|Tangerine:700" rel="stylesheet"></link> */}
       </Head>
-
       <main>
-      <div style={{
-            backgroundImage: `url("/img/b1.jpg")`,
-            height: "100vh",
-            backgroundRepeat: "no-repeat",
-            backgroundSize: "cover",
-        }}>
-        <img src="/img/bg1" />
-        <h1 className={styles.title}>
-          Hi..! I'm Kunguma Akshatra M
-        </h1>
-        <h3>A Computer Science Engineer </h3></div>
+      
 
+        <div className={styles.con}>
+        <h1 className={styles.title}>Kunguma Akshatra M</h1>
+        <span className={styles.title}>A Computer Science Engineer </span>
+        </div>
         <p className={styles.description}>
-          Get started by editing <code>pages/index.js</code>
+          Hi! I'm Kunguma Akshatra M <br/>A motivated computer
+          engineering student who is willing to learn new technologies and
+          improve every day to become TECH SAVVY. I'd love to collaborate with
+          teams and bring out collective results. I'm currently looking for an
+          opportunity in an organization that allows me to implement my
+          learnings and derives outcome that benefits both the organization and
+          myself.
         </p>
 
         <div className={styles.grid}>
@@ -63,7 +73,7 @@ export default function Home() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Powered by{' '}
+          Powered by{" "}
           <img src="/vercel.svg" alt="Vercel" className={styles.logo} />
         </a>
       </footer>
@@ -100,15 +110,8 @@ export default function Home() {
           border-radius: 5px;
           padding: 0.75rem;
           font-size: 1.1rem;
-          font-family:
-            Menlo,
-            Monaco,
-            Lucida Console,
-            Liberation Mono,
-            DejaVu Sans Mono,
-            Bitstream Vera Sans Mono,
-            Courier New,
-            monospace;
+          font-family: Menlo, Monaco, Lucida Console, Liberation Mono,
+            DejaVu Sans Mono, Bitstream Vera Sans Mono, Courier New, monospace;
         }
       `}</style>
 
@@ -117,17 +120,8 @@ export default function Home() {
         body {
           padding: 0;
           margin: 0;
-          font-family:
-            -apple-system,
-            BlinkMacSystemFont,
-            Segoe UI,
-            Roboto,
-            Oxygen,
-            Ubuntu,
-            Cantarell,
-            Fira Sans,
-            Droid Sans,
-            Helvetica Neue,
+          font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto,
+            Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue,
             sans-serif;
         }
         * {
