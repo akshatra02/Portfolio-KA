@@ -16,29 +16,56 @@
   /* backgroundRepeat: "no-repeat"; */
   /* backgroundSize: "container"; */
 }
+.navbar{
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  color: palegoldenrod;
+
+}
+.navbar ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+.navbar li {
+  float: left;
+  display: flex;
+}
+
+.navbar li a {
+  display: block;
+  color: palegoldenrod;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+.navbar li a:hover {
+  background-color: rgba(82, 54, 92, 0.318);
+}
 
 .title {
   /* margin: 0 0 1rem; */
   line-height: 1.15;
-  font-size: 4rem;
+  font-size: 6rem;
   color: plum;
   font-family: 'Sacramento', cursive;
   font-weight: 400;
   font-style: italic;
-  margin-top: 15rem;
-}
-
-.title {
+  margin-top: 13rem;
   text-align: center;
 }
 .title+span{
-  font-size:2rem;
+  font-size:3rem;
   text-align: center;
   color: #FACBEA;
   display: block;
-  /* margin-left: 7rem; */
-  /* display: flex;*/
-  /* margin-bottom: 30px; */
+ padding: 5rem;
 }
 
 .title,
@@ -49,21 +76,26 @@
 .con{
   margin-right: -15px;
   margin-left: -15px;
+  padding: 12rem;
 }
+
 .description {
   
   display: flex;
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgba(66, 12, 66, 0.566);
+  background-color: rgba(52, 20, 52, 0.675);
   max-width: 900px;
+  min-height: 200px;
   margin-top: 3rem;
-  line-height: 1.5;
-  font-size: 1.5rem;
+  line-height: 2;
+  font-size: 1.8rem;
   color: palegoldenrod;
 }
-
+.hi{
+  font-size: xx-large;
+}
 .grid {
   display: flex;
   align-items: center;

@@ -1,6 +1,5 @@
 import Head from "next/head";
 import styles from "../styles/Home.module.css";
-import Navigation from './Navigation';
 
 export default function Home() {
   return (
@@ -12,29 +11,72 @@ export default function Home() {
           href="https://fonts.googleapis.com/css2?family=Sacramento&display=swap"
           rel="stylesheet"
         />
-        
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet"></link>
-    
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css" rel="stylesheet"></link>
+        <link
+          id="bootstrap"
+          href="css/bootstrap.min.css"
+          rel="stylesheet"
+          type="text/css"
+        />
+
+        <link
+          href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          rel="stylesheet"
+        ></link>
+        <link
+          href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.1/animate.min.css"
+          rel="stylesheet"
+        ></link>
 
         {/* <link href="https://fonts.googleapis.com/css?family=Alegreya|Open+Sans|Tangerine:700" rel="stylesheet"></link> */}
       </Head>
       <main>
-      
+        <div></div>
+        <div className={styles.navbar}>
+          {/* <div className={styles.navbar}>
+        <a className={styles.navbar}>My Website</a>
+      </div> */}
+          <div className={styles.navbar}>
+            <ul className={styles.navbar}>
+              <li className={styles.navbar}>
+                <a className={styles.navbar} href="#about">
+                  PORTFOLIO
+                </a>
+              </li>
+              <li className={styles.navbar}>
+                <a className={styles.navbar} href="/">
+                  RESUME
+                </a>
+              </li>
+              <li className={styles.navbar}>
+                <a className={styles.navbar} href="/">
+                  CONTACT
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
 
         <div className={styles.con}>
-        <h1 className={styles.title}>Kunguma Akshatra M</h1>
-        <span className={styles.title}>A Computer Science Engineer </span>
+          <h1 className={styles.title}>Kunguma Akshatra M</h1>
+          <span className={styles.title}>A Computer Science Engineer </span>
         </div>
-        <p className={styles.description}>
-          Hi! I'm Kunguma Akshatra M <br/>A motivated computer
-          engineering student who is willing to learn new technologies and
-          improve every day to become TECH SAVVY. I'd love to collaborate with
-          teams and bring out collective results. I'm currently looking for an
-          opportunity in an organization that allows me to implement my
-          learnings and derives outcome that benefits both the organization and
-          myself.
-        </p>
+        <section id="about" className={styles.des}>
+          <p className={styles.description}>
+            <span className={styles.hi}>Hi! I'm Kunguma Akshatra M </span>I am a
+            dedicated computer engineering student driven by an unwavering
+            commitment to mastering emerging technologies and cultivating
+            profound digital acumen. My profound passion lies in the dynamic
+            fields of web development, software engineering, and application
+            development, where I thrive on crafting innovative solutions. An
+            ardent collaborator, I am fueled by the prospect of synergizing with
+            diverse teams to unleash the full potential of collective
+            creativity, ultimately achieving remarkable outcomes. I am presently
+            in pursuit of an opportunity within an organization that not only
+            values my relentless pursuit of knowledge but also provides a
+            platform to apply my skills, fostering mutual growth and enduring
+            success.
+          </p>
+        </section>
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
