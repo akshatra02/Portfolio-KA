@@ -2,16 +2,18 @@
   position: relative;
   min-height: 100px;
   min-width: 100%;
-  height: auto;
+  height: auto;background-color: rgb(23, 3, 33);
+  
+  /* background-image: url("/b1.jpg"); */
+  background-repeat: repeat-y;
+  /* background-size: cover; */
+  background-attachment: fixed;
+  background-position: 90%;
   /* display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center; */
-  background-image: url("/bg1.png");
-  background-repeat: repeat-y;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: 90%;
+ 
   /* height: "100vh"; */
   /* backgroundRepeat: "no-repeat"; */
   /* backgroundSize: "container"; */
@@ -77,6 +79,15 @@
   margin-right: -15px;
   margin-left: -15px;
   padding: 12rem;
+   background-image: url("/bg1.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 90%;
+  position: relative;
+  min-height: 100px;
+  min-width: 100%;
+  height: auto;
 }
 
 .description {
@@ -85,16 +96,40 @@
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: rgba(52, 20, 52, 0.675);
-  max-width: 900px;
+  background-color: rgb(23, 3, 33);
+  min-width: 900px;
   min-height: 200px;
   margin-top: 3rem;
+  padding: 10px 200px;
   line-height: 2;
   font-size: 1.8rem;
   color: palegoldenrod;
 }
+
 .hi{
   font-size: xx-large;
+}
+.project{
+  
+  background-image: url("/project.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 90%;
+  min-height: 100px;
+  min-width: 100%;
+  height: auto;
+
+
+}
+.pro{
+  text-align: center;
+  line-height: 1.15;
+  font-size: 6rem;
+  color: plum;
+  font-family: 'Tangerine';
+  font-weight: 400;
+  /* font-style: italic; */
 }
 .grid {
   display: flex;
@@ -102,15 +137,18 @@
   justify-content: center;
   flex-wrap: wrap;
 
-  max-width: 800px;
+  max-width:60%;
   margin-top: 3rem;
+  margin-left: 30rem;
 }
 
 .card {
+/* max-width: 900px; */
+align-items: center;
   margin: 1rem;
   flex-basis: 45%;
   padding: 1.5rem;
-  text-align: left;
+  text-align: center;
   color: inherit;
   text-decoration: none;
   border: 1px solid #eaeaea;
@@ -123,21 +161,28 @@
 .card:hover,
 .card:focus,
 .card:active {
-  color: #0070f3;
-  border-color: #0070f3;
+  background-color: rgba(82, 54, 92, 0.318);
+  /* border-color: rgba(200, 169, 211, 0.318); */
+  box-shadow: 4px 3px 3px 0 rgba(221, 160, 221, 0.708);
+  text-decoration: none;
 }
 
 .card h3 {
-  margin: 0 0 1rem 0;
-  color: palegoldenrod;
-  font-size: 1.5rem;
+  margin: 1rem;
+  color: plum;
+  font-size: 2rem;
+  text-align: center;
 }
 
 .card p {
   margin: 0;
-  font-size: 1.25rem;
+  font-size: 1.5rem;
+  text-align: center;
   color: palegoldenrod;
   line-height: 1.5;
+}
+.card img{
+  width: 100%;
 }
 
 .logo {

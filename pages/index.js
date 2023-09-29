@@ -27,7 +27,7 @@ export default function Home() {
           rel="stylesheet"
         ></link>
 
-        {/* <link href="https://fonts.googleapis.com/css?family=Alegreya|Open+Sans|Tangerine:700" rel="stylesheet"></link> */}
+        <link href="https://fonts.googleapis.com/css?family=Alegreya|Open+Sans|Tangerine:700" rel="stylesheet"></link>
       </Head>
       <main>
         <div></div>
@@ -78,35 +78,69 @@ export default function Home() {
           </p>
         </section>
 
+        <section className={styles.project}>
+          <h1 className={styles.pro}>PROJECTS</h1>
         <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
+          <a href="https://github.com/akshatra02/Kranti2k23" className={styles.card}>
+            <img src="kr.png" />
+            <h3>KRANTI2K23 &rarr;</h3>
+            <p>Front End UI Developer</p>
           </a>
 
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/canary/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
+          <a href="https://github.com/akshatra02/E-Authentication" className={styles.card}>
+          <img src="eau.png" />
+            <h3>E-Authentication &rarr;</h3>
+            <p>Full stack Developer</p>
           </a>
 
           <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
+            href="https://github.com/akshatra02/cryptoverse-tracker"
             className={styles.card}
           >
-            <h3>Deploy &rarr;</h3>
+            <img src="crypt0.png" />
+            <h3>CRYPTOVERSE &rarr;</h3>
+            <p>Full stack Developer</p>
+          </a>
+
+          <a
+            href="https://github.com/akshatra02/Foreign-Trading-System"
+            className={styles.card}
+          >
+            <img src="fts.jpg" />
+
+            <h3>FOREIGN TRADING SYSTEM &rarr;</h3>
             <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
+            Full stack Developer
             </p>
           </a>
         </div>
+        </section>
+        <section id="skills" className={styles.des}>
+          <p className={styles.description}>
+            <span className={styles.hi}>SKILLS</span>
+            <img src="java.png" />
+            <img src="jee.png" />
+            <img src="python.png" />
+            <img src="html.png" />
+            <img src="css.png" />
+            <img src="js.png" />
+            <img src="bootstrap.png" />
+            <img src="node.png" />
+            <img src="xml.png" />
+            <img src="mysql.png" />
+            <img src="mongo.png" />
+            <img src="git.png" />
+            <img src="github.png" />
+            <img src="vscode.png" />
+            <img src="eclipse.png" />
+            <img src="Intellij.png" />
+            <img src="netbeans.png" />
+            <img src="argo-.png" />
+            <img src="windows.png" />
+
+
+          </p>
+        </section>
       </main>
 
       <footer>
