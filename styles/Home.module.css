@@ -184,7 +184,121 @@ align-items: center;
 .card img{
   width: 100%;
 }
+.skill{
+  display: flexbox;
+  text-align: center;
+  color: plum;
 
+  font-size: xx-large;
+}
+.skillrow{
+  text-align: center;
+  display: flexbox;
+  padding: 2rem;
+  font-size: 3rem;
+  margin-left: -15px;
+  margin-right: -15px;
+}
+.skillicon{
+  font-size: medium;
+}
+.skillicon img{
+  vertical-align: middle;
+  padding: 1rem;
+  height: 100px;
+}
+
+
+.edu{
+  
+  background-image: url("/edu.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 90%;
+  min-height: 100px;
+  min-width: 100%;
+  height: auto;
+
+
+}
+.ed{
+  text-align: center;
+  line-height: 1.15;
+  font-size: 6rem;
+  color: plum;
+  font-family: 'Tangerine';
+  font-weight: 400;
+  /* font-style: italic; */
+}
+.timeline {
+  list-style: none;
+  padding: 20px 10px 20px;
+  position: relative;
+}
+.timeline:before {
+  top: 0;
+  bottom: 0;
+  position: absolute;
+  content: " ";
+  width: 1.5px;
+  background-color: #eee;
+  left: 50%;
+  margin-left: -1.5px;
+}
+.timeline > li {
+  margin-bottom: 40px;
+  position: relative;
+}
+.timeline > li:before, .timeline > li:after {
+  content: " ";
+  display: table;
+}
+.timeline > li:after {
+   clear: both; 
+}
+.timeline > li > .timage {
+  position: absolute;
+  width: 100px;
+  height: 100px;
+  border: 2px solid rgba(232, 232, 231, 0.2);
+  line-height: 50px;
+  font-size: 1.4em;
+  text-align: center;
+  top: 20px;
+  left: 50%;
+  margin-left: -50px;
+  background-color: rgb(23, 3, 33);
+  z-index: 100;
+  border-radius: 100%;
+  -webkit-box-shadow: 0 1px 2px rgba(232, 232, 231, 0.1);
+  box-shadow: 0 1px 3px rgba(212, 251, 223, 0.1);
+}
+.timeline>li .timage .content {
+  margin-top: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+}
+
+.timeline li {
+  display: list-item;
+  text-align: -webkit-match-parent;
+}
+.timeline ul {
+  display: block;
+  list-style-type: disc;
+  margin-block-start: 1em;
+  margin-block-end: 1em;
+  margin-inline-start: 0px;
+  margin-inline-end: 0px;
+  padding-inline-start: 40px;
+}
+.t1 .t2 .tb{
+color: plum;
+font-size: larger;
+}
 .logo {
   height: 1em;
 }

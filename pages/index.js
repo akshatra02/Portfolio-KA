@@ -27,7 +27,10 @@ export default function Home() {
           rel="stylesheet"
         ></link>
 
-        <link href="https://fonts.googleapis.com/css?family=Alegreya|Open+Sans|Tangerine:700" rel="stylesheet"></link>
+        <link
+          href="https://fonts.googleapis.com/css?family=Alegreya|Open+Sans|Tangerine:700"
+          rel="stylesheet"
+        ></link>
       </Head>
       <main>
         <div></div>
@@ -80,67 +83,179 @@ export default function Home() {
 
         <section className={styles.project}>
           <h1 className={styles.pro}>PROJECTS</h1>
-        <div className={styles.grid}>
-          <a href="https://github.com/akshatra02/Kranti2k23" className={styles.card}>
-            <img src="kr.png" />
-            <h3>KRANTI2K23 &rarr;</h3>
-            <p>Front End UI Developer</p>
-          </a>
+          <div className={styles.grid}>
+            <a
+              href="https://github.com/akshatra02/Kranti2k23"
+              className={styles.card}
+            >
+              <img src="kr.png" />
+              <h3>KRANTI2K23 &rarr;</h3>
+              <p>Front End UI Developer</p>
+            </a>
 
-          <a href="https://github.com/akshatra02/E-Authentication" className={styles.card}>
-          <img src="eau.png" />
-            <h3>E-Authentication &rarr;</h3>
-            <p>Full stack Developer</p>
-          </a>
+            <a
+              href="https://github.com/akshatra02/E-Authentication"
+              className={styles.card}
+            >
+              <img src="eau.png" />
+              <h3>E-Authentication &rarr;</h3>
+              <p>Full stack Developer</p>
+            </a>
 
-          <a
-            href="https://github.com/akshatra02/cryptoverse-tracker"
-            className={styles.card}
-          >
-            <img src="crypt0.png" />
-            <h3>CRYPTOVERSE &rarr;</h3>
-            <p>Full stack Developer</p>
-          </a>
+            <a
+              href="https://github.com/akshatra02/cryptoverse-tracker"
+              className={styles.card}
+            >
+              <img src="crypt0.png" />
+              <h3>CRYPTOVERSE &rarr;</h3>
+              <p>Full stack Developer</p>
+            </a>
 
-          <a
-            href="https://github.com/akshatra02/Foreign-Trading-System"
-            className={styles.card}
-          >
-            <img src="fts.jpg" />
+            <a
+              href="https://github.com/akshatra02/Foreign-Trading-System"
+              className={styles.card}
+            >
+              <img src="fts.jpg" />
 
-            <h3>FOREIGN TRADING SYSTEM &rarr;</h3>
-            <p>
-            Full stack Developer
-            </p>
-          </a>
-        </div>
+              <h3>FOREIGN TRADING SYSTEM &rarr;</h3>
+              <p>Full stack Developer</p>
+            </a>
+          </div>
         </section>
         <section id="skills" className={styles.des}>
-          <p className={styles.description}>
-            <span className={styles.hi}>SKILLS</span>
-            <img src="java.png" />
-            <img src="jee.png" />
-            <img src="python.png" />
-            <img src="html.png" />
-            <img src="css.png" />
-            <img src="js.png" />
-            <img src="bootstrap.png" />
-            <img src="node.png" />
-            <img src="xml.png" />
-            <img src="mysql.png" />
-            <img src="mongo.png" />
-            <img src="git.png" />
-            <img src="github.png" />
-            <img src="vscode.png" />
-            <img src="eclipse.png" />
-            <img src="Intellij.png" />
-            <img src="netbeans.png" />
-            <img src="argo-.png" />
-            <img src="windows.png" />
+          <h2 className={styles.skill}>SKILLS</h2>
+          <div className={styles.skillrow}>
+            <span className={styles.skillicon}>
+              <img src="jee.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="java.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="python.png" />
+            </span>
+          </div>
+          <div className={styles.skillrow}>
+            <span className={styles.skillicon}>
+              <img src="html.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="css.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="js.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="bootstrap.png" />
+            </span>
+          </div>
+          <div className={styles.skillrow}>
+            <span className={styles.skillicon}>
+              <img src="node.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="xml.png" />
+            </span>
+          </div>
 
+          <div className={styles.skillrow}>
+            <span className={styles.skillicon}>
+              <img src="mysql.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="mongo.jpg" />
+            </span>
+          </div>
+          <div className={styles.skillrow}>
+            <span className={styles.skillicon}>
+              <img src="git.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="github.png" />
+            </span>
+          </div>
+          <div className={styles.skillrow}>
+            <span className={styles.skillicon}>
+              <img src="vscode.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="eclipse.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="Intellij.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="netbeans.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="argo-.png" />
+            </span>
+          </div>
 
-          </p>
+          <div className={styles.skillrow}>
+            <span className={styles.skillicon}>
+              <img src="windows.png" />
+            </span>
+            <span className={styles.skillicon}>
+              <img src="iso.png" />
+            </span>
+          </div>
         </section>
+   
+
+					
+        <section className={styles.edu}>
+          <h1 className={styles.ed}>EDUCATION</h1>
+          <ul className={styles.timeline}>
+					<li>
+						<div className={styles.timage}>
+							<div className={styles.content}>2020 - 2024</div>
+						</div> 
+						<div className={styles.panel}>
+							<div className={styles.heading}>
+								<div className={styles.title1}>Meenakshi Sundararajan Engineering College</div>
+								<div className={styles.title2}>Bachelor of Engineering (BE)</div>
+							</div> 
+							
+							<div className={styles.tbody}>
+              <p>Specialization: Computer Science and Engineering</p>
+              <p>Percentage:88.4 %</p>
+							</div> 
+						</div> 
+					</li> 
+					<li className={styles.inverted}>
+						<div className={styles.timage}>
+							<div className={styles.content}>2019 - 2020</div>
+						</div> 
+						<div className={styles.panel}>
+							<div className={styles.heading}>
+								<div className={styles.t1}>P.N.Dhawan Adarsh Vidyalaya Matriculation Higher Secondary School</div>
+								<div className={styles.t2}>XII Std</div>
+							</div>
+							<div className={styles.tb}>
+								<p>Specialization: Computer Science</p>
+              <p>Percentage:87.3 %</p>
+							</div>
+						</div>
+					</li> 
+					<li>
+						<div className={styles.timage}>
+							<div className={styles.content}>2017 - 2018</div>
+						</div>
+						<div className={styles.panel}>
+							<div className={styles.heading}>
+								<div className={styles.title1}>P.N.Dhawan Adarsh Vidyalaya Matriculation Higher Secondary School</div>
+								<div className={styles.title2}>X Std</div>
+							</div>
+							<div className={styles.tbody}>
+              <p>Percentage:94.4 %</p>
+							</div> 
+						</div> 
+					</li> 
+					</ul> 
+        </section>
+
+
       </main>
 
       <footer>
