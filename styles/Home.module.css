@@ -3,20 +3,10 @@
   min-height: 100px;
   min-width: 100%;
   height: auto;background-color: rgb(23, 3, 33);
-  
-  /* background-image: url("/b1.jpg"); */
   background-repeat: repeat-y;
-  /* background-size: cover; */
   background-attachment: fixed;
   background-position: 90%;
-  /* display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center; */
- 
-  /* height: "100vh"; */
-  /* backgroundRepeat: "no-repeat"; */
-  /* backgroundSize: "container"; */
+  
 }
 .navbar{
   display: flex; 
@@ -24,6 +14,7 @@
   justify-content: center;
   flex-wrap: wrap;
   color: palegoldenrod;
+  position: unset;
 
 }
 .navbar ul {
@@ -246,18 +237,12 @@ align-items: center;
   left: 50%;
   margin-left: -1.5px;
 }
-.timeline > li {
+.timeline  li {
   margin-bottom: 40px;
   position: relative;
 }
-.timeline > li:before, .timeline > li:after {
-  content: " ";
-  display: table;
-}
-.timeline > li:after {
-   clear: both; 
-}
-.timeline > li > .timage {
+
+.timeline  li  .timage {
   position: absolute;
   width: 100px;
   height: 100px;
@@ -274,33 +259,130 @@ align-items: center;
   -webkit-box-shadow: 0 1px 2px rgba(232, 232, 231, 0.1);
   box-shadow: 0 1px 3px rgba(212, 251, 223, 0.1);
 }
-.timeline>li .timage .content {
+.timeline li{
   margin-top: 22px;
   font-family: 'Open Sans', sans-serif;
   font-size: 16px;
   font-weight: 400;
-  color: #fff;
+  color: palegoldenrod;
 }
 
-.timeline li {
-  display: list-item;
-  text-align: -webkit-match-parent;
+.content{
+  margin-top: 22px;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 16px;
+  font-weight: 600;
+  color: plum;
 }
-.timeline ul {
-  display: block;
-  list-style-type: disc;
-  margin-block-start: 1em;
-  margin-block-end: 1em;
-  margin-inline-start: 0px;
-  margin-inline-end: 0px;
-  padding-inline-start: 40px;
+.panel{
+  border: 5px solid rgb(174, 130, 170);
+  border-style: groove;
+  box-shadow: 4px 3px 8px 0 rgba(221, 160, 221, 0.518);
+  max-width: 400px;
+  margin-left: 25rem;
+  padding: 2rem;
+  background-color: rgba(23, 3, 33, 0.553) ;
 }
-.t1 .t2 .tb{
+
+.ipanel{
+border-left-width: 0;
+    border-right-width: 14px;
+    left: -14px;
+    right: auto;
+}
+.ipanel{
+  border: 5px solid rgb(174, 130, 170);
+  border-style: groove;
+  box-shadow: 4px 3px 8px 0 rgba(221, 160, 221, 0.518);
+  background-color: rgba(23, 3, 33, 0.553) ;
+  margin-left: 80rem;
+  max-width: 400px;
+  padding: 2rem;
+}
+.t1{
 color: plum;
-font-size: larger;
+font-size: large;
+}
+.t2{
+  color: palegoldenrod;
+  font-size: medium;
+
+}
+.tb{
+  color: palegoldenrod;
+  font-size: small;
+
 }
 .logo {
   height: 1em;
+}
+.cer{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  background-color: rgb(23, 3, 33);
+  min-width: 900px;
+  min-height: 200px;
+  margin-top: 0;
+  padding: 10px 200px;
+  line-height: 2;
+  font-size: 1.8rem;
+  color: palegoldenrod;
+
+}
+.contact{
+  background-image: url("/Savy.png");
+  background-repeat: repeat-y;
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: 90%;
+  min-height: 100px;
+  min-width: 100%;
+  height: auto;
+}
+.contact h1{
+  text-align: center;
+  line-height: 1;
+  font-size: 6rem;
+  color: plum;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-weight: 100; */
+}
+.contact p{
+  text-align: center;
+  line-height: 1;
+  font-size: 2rem;
+  color: plum;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  /* font-weight: 300; */
+}
+.cicon{
+  padding: 3rem;
+  align-items: center;
+  display: flex; 
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.cicon li{
+float: left;
+display: flex;
+}
+.cicon svg{
+  width: 100px;
+  height: 50px;
+  color: plum;
+}
+.foot{
+  color: plum;
+}
+.foot svg{
+  display: flex;
+  width: 50px;
+  height: 30px;
+margin-right: -10rem;
+float: left;
 }
 
 @media (max-width: 600px) {
